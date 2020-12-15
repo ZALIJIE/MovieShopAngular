@@ -1,3 +1,4 @@
+import { movieDetail } from './../../shared/models/movieDetail';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Movie } from 'src/app/shared/models/movie';
@@ -15,5 +16,9 @@ export class MovieService {
 
   getMoviesByGenre(id:number):Observable<Movie[]>{
     return this.apiService.getAll('movies/genres/'+id);
+  }
+
+  getMovieDetails(id:number):Observable<movieDetail>{
+    return this.apiService.getOne('movies/'+id);
   }
 }

@@ -12,6 +12,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { MoviesComponent } from './movies/movies.component';
 import { MovieCardComponent } from './shared/components/movie-card/movie-card.component';
 
+import { JwtModule } from "@auth0/angular-jwt";
+import {ReactiveFormsModule, FormsModule} from '@angular/forms';
+import { MovieDetailsComponent } from './movies/movie-details/movie-details.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,13 +24,17 @@ import { MovieCardComponent } from './shared/components/movie-card/movie-card.co
     LoginComponent,
     SignupComponent,
     MoviesComponent,
-    MovieCardComponent
+    MovieCardComponent,
+    MovieDetailsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule,
+    JwtModule
   ],
   providers: [],
   bootstrap: [AppComponent]
