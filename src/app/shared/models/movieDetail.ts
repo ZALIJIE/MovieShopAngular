@@ -1,3 +1,4 @@
+import { cast } from './cast';
 export interface movieDetail {
     id: number;
     title: string;
@@ -14,6 +15,6 @@ export interface movieDetail {
     runTime: number;
     price: number;
     favoritesCount: number;
-    casts?: any;
+    casts?: cast[];
     genres?: any;
   }

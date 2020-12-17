@@ -14,3 +14,23 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
+hr{
+    height:3px;
+}
+
+.row{
+    margin: auto;
+}
+
+#left{
+    padding: 15px;
+}
+
+#castinfo{
+    height: 50px;
+}
+
+#castImg {
+    border-radius: 50%;
+}

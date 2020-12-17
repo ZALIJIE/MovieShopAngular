@@ -22,15 +22,15 @@ export class HeaderComponent implements OnInit {
       this.genres = g;
     });  
 
-    this.authenService.isUserAuthenticated.subscribe(
-      isLogedIn=>{
-        this.isUserAuthenticated=isLogedIn;
-      }
-    );
+    // this.authenService.isUserAuthenticated.subscribe(
+    //   isLogedIn=>{
+    //     this.isUserAuthenticated=isLogedIn;
+    //   }
+    // );
 
-    if(this.isUserAuthenticated){
-      this.authenService.currentLogedInUser.subscribe(user=>{this.LogedInUser=user;});
-    }
+    // if(this.isUserAuthenticated){
+    //   this.authenService.currentLogedInUser.subscribe(user=>{this.LogedInUser=user;});
+    // }
   }
 
   logout(){
